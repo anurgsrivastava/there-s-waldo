@@ -1,10 +1,10 @@
 # There's Waldo
-Deep learning project that solves Where's Wally puzzles by finding the exact position of Wally in an image
+A Machine Learning model that solves Where's Waldo puzzles by searching for the exact position of Waldo in a given image
 
 ![alt text](https://raw.githubusercontent.com/imanurg/there-s-waldo/master/docs/docs.png)
 
 There's Waldo is a Tensorflow project that includes a model for solving Where's Waldo picture puzzles.
-It uses Faster RCNN Inception model initially trained on COCO dataset and retrained for finding Wally using transfer learning with Tensorflow Object Detection API.
+It uses Faster RCNN Inception model initially trained on COCO dataset and retrained for finding Waldo using transfer learning with Tensorflow Object Detection API.
 
 ## Getting Ready
 1. Install latest version of Tensorflow
