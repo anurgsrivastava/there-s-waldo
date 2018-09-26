@@ -10,7 +10,6 @@ import argparse
 model_path = './trained_model/frozen_inference_graph.pb'
 
 def draw_box(box, image_np):
-
     #expand the box by 50%
     box += np.array([-(box[2] - box[0])/2, -(box[3] - box[1])/2, (box[2] - box[0])/2, (box[3] - box[1])/2]) 
 
