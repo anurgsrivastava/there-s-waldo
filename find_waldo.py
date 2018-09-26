@@ -58,9 +58,9 @@ with detection_graph.as_default():
         feed_dict={image_tensor: np.expand_dims(image_np, axis=0)})
 
     if scores[0][0] < 0.1:
-        sys.exit('Wally not found :(')
+        sys.exit('Could Not Find Waldo :[')
 
-    print('Wally found')
+    print('Found Waldo! :D')
     fig, ax = draw_box(boxes[0][0], image_np)
   
     ax.imshow(image_np)
