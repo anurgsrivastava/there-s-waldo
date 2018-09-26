@@ -10,6 +10,7 @@ import argparse
 model_path = './trained_model/frozen_inference_graph.pb'
 
 def draw_box(box, image_np):
+
     #expand the box by 50%
     box += np.array([-(box[2] - box[0])/2, -(box[3] - box[1])/2, (box[2] - box[0])/2, (box[3] - box[1])/2]) 
 
@@ -50,6 +51,7 @@ with detection_graph.as_default():
     scores = detection_graph.get_tensor_by_name('detection_scores:0')
     classes = detection_graph.get_tensor_by_name('detection_classes:0')
     num_detections = detection_graph.get_tensor_by_name('num_detections:0')
+    
     # Actual detection.
     (boxes, scores, classes, num_detections) = sess.run(
         [boxes, scores, classes, num_detections],

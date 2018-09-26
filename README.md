@@ -12,7 +12,7 @@ It uses Faster RCNN Inception model initially trained on COCO dataset and retrai
 
 ## Usage
 ```
-python find_wally.py images/1.jpg
+python find_waldo.py images/1.jpg
 ```
 
 The image should pop up with wally outlined 
