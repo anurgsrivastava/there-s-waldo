@@ -12,13 +12,13 @@ It uses a Faster RCNN Inception model initially trained on COCO dataset and retr
 
 ## Usage
 ```
-python find_waldo.py images/1.jpg
+python3 find_waldo.py images/1.jpg
 ```
 The queried image should pop up with Waldo outlined in a box.
 
 ## Requirements
 - [Python 3.6+](https://www.continuum.io/download)
-- [TensorFlow 1.0+](https://www.tensorflow.org/)
+- [TensorFlow 1.10+](https://www.tensorflow.org/)
 
 ## Sources
 - [Tensorflow Object Detection API](https://github.com/tensorflow/models/tree/master/research/object_detection)
